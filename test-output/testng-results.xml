@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20388" started-at="2019-06-10T02:06:59Z" finished-at="2019-06-10T02:07:19Z">
+  <suite name="Default suite" duration-ms="26043" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20388" started-at="2019-06-10T02:06:59Z" finished-at="2019-06-10T02:07:19Z">
-      <class name="com.syntax.testcases.AddEmployeePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest@14acaea5]" name="setUp" is-config="true" duration-ms="4889" started-at="2019-06-10T02:06:59Z" finished-at="2019-06-10T02:07:04Z">
+    <test name="Default test" duration-ms="26043" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:22Z">
+      <class name="com.syntax.testcases.AddEmployeePageTest2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="setUp" is-config="true" duration-ms="5159" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest@14acaea5]" name="addEmployee" duration-ms="14806" started-at="2019-06-10T02:07:04Z" finished-at="2019-06-10T02:07:19Z">
+        <test-method status="PASS" signature="addEmployee()[pri:1, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="addEmployee" duration-ms="20151" started-at="2019-06-12T03:12:01Z" finished-at="2019-06-12T03:12:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest@14acaea5]" name="tearDown" is-config="true" duration-ms="670" started-at="2019-06-10T02:07:19Z" finished-at="2019-06-10T02:07:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="tearDown" is-config="true" duration-ms="718" started-at="2019-06-12T03:12:21Z" finished-at="2019-06-12T03:12:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.syntax.testcases.AddEmployeePageTest -->
+      </class> <!-- com.syntax.testcases.AddEmployeePageTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

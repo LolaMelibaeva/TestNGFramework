@@ -30,7 +30,7 @@ public class LoginPage extends BaseClass {
 	
 	//initialize our variables;
 	public LoginPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);;
 	}
 	
 	public void login(String uname, String pwd) {

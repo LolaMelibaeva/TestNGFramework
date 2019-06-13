@@ -25,7 +25,7 @@ public class LoginPageTest extends BaseClass {
 
 	}
 
-	@Test(enabled=false)
+	@Test(enabled=true)
 
 	public void doLogin() {
 		LoginPage login = new LoginPage();
@@ -42,7 +42,7 @@ public class LoginPageTest extends BaseClass {
 
 	}
 	
-	@Test()
+	@Test(enabled=false)
 	public void negativeLogin() {
 		
 

@@ -26,6 +26,12 @@ public class AddEmployeePage extends BaseClass {
     @FindBy(xpath="//div[@id='location_inputfileddiv']//ul")
     public WebElement locationList;
     
+    @FindBy(css="a#systemUserSaveBtn")
+    public WebElement saveBtn;
+    
+    @FindBy(xpath="//button[@type='submit']")
+    public WebElement save;
+    
 	
 	public AddEmployeePage() {
 		PageFactory.initElements(driver, this);
