@@ -1,25 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26043" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:22Z">
+  <suite name="Default suite" duration-ms="68546" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:32:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26043" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:22Z">
-      <class name="com.syntax.testcases.AddEmployeePageTest2">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="setUp" is-config="true" duration-ms="5159" started-at="2019-06-12T03:11:56Z" finished-at="2019-06-12T03:12:01Z">
+    <test name="Default test" duration-ms="68546" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:32:48Z">
+      <class name="com.syntax.testcases.AddLocationPateTestWithExcel">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4545" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:31:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee()[pri:1, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="addEmployee" duration-ms="20151" started-at="2019-06-12T03:12:01Z" finished-at="2019-06-12T03:12:21Z">
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8283" started-at="2019-06-15T13:31:45Z" data-provider="Country details" finished-at="2019-06-15T13:31:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[APII]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Algeria]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Oran]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[78021.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest2@14acaea5]" name="tearDown" is-config="true" duration-ms="718" started-at="2019-06-12T03:12:21Z" finished-at="2019-06-12T03:12:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="665" started-at="2019-06-15T13:31:53Z" finished-at="2019-06-15T13:31:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.syntax.testcases.AddEmployeePageTest2 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4006" started-at="2019-06-15T13:31:54Z" finished-at="2019-06-15T13:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8299" started-at="2019-06-15T13:31:58Z" data-provider="Country details" finished-at="2019-06-15T13:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[KLDOO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Toronto]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14555.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-06-15T13:32:06Z" finished-at="2019-06-15T13:32:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4103" started-at="2019-06-15T13:32:07Z" finished-at="2019-06-15T13:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="9197" started-at="2019-06-15T13:32:11Z" data-provider="Country details" finished-at="2019-06-15T13:32:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FDSPP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mexico]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mexico City]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17895.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="661" started-at="2019-06-15T13:32:20Z" finished-at="2019-06-15T13:32:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4001" started-at="2019-06-15T13:32:21Z" finished-at="2019-06-15T13:32:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="9644" started-at="2019-06-15T13:32:25Z" data-provider="Country details" finished-at="2019-06-15T13:32:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BDDNN]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Turkey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ankara]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[96324.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-06-15T13:32:34Z" finished-at="2019-06-15T13:32:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4036" started-at="2019-06-15T13:32:35Z" finished-at="2019-06-15T13:32:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8660" started-at="2019-06-15T13:32:39Z" data-provider="Country details" finished-at="2019-06-15T13:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WJDM]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Georgi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tbilisi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[45789.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="660" started-at="2019-06-15T13:32:48Z" finished-at="2019-06-15T13:32:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.syntax.testcases.AddLocationPateTestWithExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

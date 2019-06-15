@@ -308,28 +308,59 @@ public class CommonMethods extends  BaseClass {
 	 * 
 	 * @param List<WebElement>cells, String expValue
 	 */
+
+	public static void tableCompareCellValueToExpected(List<WebElement> cells, String expValue) {
+		boolean isSelected = false;
+		
+		for (WebElement cell : cells) {
+			String cellText = cell.getText();
+			if (cellText.contains(expValue)) {
+				System.out.println(expValue + " is verified on the table");
+				isSelected = true;
+				break;
+			}
+		}
+
+		if (!isSelected) {
+			System.out.println("Expected value is NOT verified on the table");
+
+		}
+	}
+
+	public static void selectList(WebElement element, String text) {
+
+		List<WebElement> listLocations = element.findElements(By.tagName("li"));
+
+		for (WebElement li : listLocations) {
+			String liText = li.getAttribute("innerHTML");
+
+			if (liText.contains(text)) {
+				li.click();
+				break;
+			}
+		}
+	}
 	
-public static void tableCompareCellValueToExpected(List<WebElement>cells,String expValue) {
-	boolean isSelected = false;
-        for(WebElement cell:cells) {
-            String cellText=cell.getText();
-                if(cellText.equals(expValue)) {
-                   System.out.println(expValue +" is verified on the table");
-                   isSelected=true;
-                   break;
-                }
+	
+	public static boolean compareListValueReturnBoolean(List<WebElement> cell, String expectedValue) {
+        boolean flag = false;
+        new WebDriverWait(driver, 40).until(ExpectedConditions.visibilityOfAllElements(cell));
+
+        for (WebElement cells : cell) {
+            String cellText = cells.getText();
+            if (cellText.contains(expectedValue)) {
+                flag = true;
+                break;
             }
+        }
 
-if (!isSelected) {
-	System.out.println("Expected value is NOT verified on the table");
-
-}
-}
+        if (!flag) {
+            System.err.println(expectedValue +" is NOT verified");
+        }
+        return flag;
     }
 
-
-
-
+}
 
 
 

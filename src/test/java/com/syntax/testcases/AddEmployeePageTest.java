@@ -27,12 +27,12 @@ public class AddEmployeePageTest extends BaseClass {
 
 		lg.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
 
-		CommonMethods.click(hm.pim);
+		CommonMethods.click(hm.PIM);
 		CommonMethods.click(hm.addEmployee);
 
-		CommonMethods.sendText(addEmp.firstname, "Lyonya ");
-		CommonMethods.sendText(addEmp.lastname, "Harris");
-		CommonMethods.sendText(addEmp.employeeId, "100");
+		CommonMethods.sendText(addEmp.firstName, "Lyonya ");
+		CommonMethods.sendText(addEmp.lastName, "Harris");
+		
 		CommonMethods.click(addEmp.location);
 
 		// 1 identify list
@@ -54,13 +54,12 @@ public class AddEmployeePageTest extends BaseClass {
 		}
 		Thread.sleep(2000);
 		CommonMethods.click(addEmp.saveBtn);
-		Thread.sleep(2000);
-		CommonMethods.click(addEmp.save);
+		
 
 		Thread.sleep(2000);
 		CommonMethods.click(hm.empList);
 		CommonMethods.click(hm.empName);
-		CommonMethods.sendText(hm.empName, "100");
+		CommonMethods.sendText(hm.empName, addEmp.firstName+" "+addEmp.lastName);
 		
 		
 		

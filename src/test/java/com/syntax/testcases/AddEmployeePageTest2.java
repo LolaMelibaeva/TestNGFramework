@@ -26,12 +26,12 @@ public class AddEmployeePageTest2 extends BaseClass {
 
 		lg.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
 
-		CommonMethods.click(hm.pim);
+		CommonMethods.click(hm.PIM);
 		CommonMethods.click(hm.addEmployee);
 
-		CommonMethods.sendText(addEmp.firstname, "Alluchka");
-		CommonMethods.sendText(addEmp.lastname, "Pugacheva");
-		CommonMethods.sendText(addEmp.employeeId, "132");
+		CommonMethods.sendText(addEmp.firstName, "Alluchka");
+		CommonMethods.sendText(addEmp.lastName, "Pugacheva");
+		
 		String expectedEmpID = addEmp.employeeId.getAttribute("value");
 		System.out.println("Employee ID is " + expectedEmpID);
 		CommonMethods.click(addEmp.location);
@@ -58,7 +58,7 @@ public class AddEmployeePageTest2 extends BaseClass {
 
 		CommonMethods.click(addEmp.saveBtn);
 		Thread.sleep(2000);
-		CommonMethods.click(addEmp.save);
+		CommonMethods.click(addEmp.saveBtn2);
 		Thread.sleep(2000);
 		CommonMethods.click(hm.empList);
 		CommonMethods.click(hm.empName);

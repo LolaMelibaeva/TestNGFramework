@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.syntax.testcases.AddEmployeePageTest2">
+      <class name="com.syntax.testcases.AddLocationPateTestWithExcel">
         <methods>
           <include name="addEmployee"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.syntax.testcases.AddEmployeePageTest2 -->
+      </class> <!-- com.syntax.testcases.AddLocationPateTestWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,15 +16,15 @@ public class BaseClass {
 	@BeforeMethod(alwaysRun = true)
 	public static void setUp() {
 
-		ConfigsReader.readProperties(Constants.CREDENTIALS_FILEPATH);
+		ConfigsReader.readProperties(Constants.CREDENTIALS_FILEPATH);// "src/test/resources/configs/credentials.properties";
 		String browser = ConfigsReader.getProperty("browser");
-		String url = ConfigsReader.getProperty("url");
+
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
-
 			driver = new ChromeDriver();
+
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "src/test/resource/drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		} else if (browser.equalsIgnoreCase("ie")) {
@@ -32,17 +32,16 @@ public class BaseClass {
 			driver = new InternetExplorerDriver();
 
 		} else {
-			System.out.println("Browser given is wrong");
+			System.out.println("browser given is wrong");
 		}
-		driver.get(url);
-		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().fullscreen();
+		driver.get(ConfigsReader.getProperty("url"));
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public static void tearDown() {
 		driver.quit();
 	}
-
 }

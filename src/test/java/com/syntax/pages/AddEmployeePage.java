@@ -8,15 +8,15 @@ import com.syntax.utils.BaseClass;
 
 public class AddEmployeePage extends BaseClass {
 	
-	@FindBy(css="input#firstName")
-	public WebElement firstname;
-	
-	@FindBy(css="input#middleName")
-	public WebElement middlename;
-	
-	@FindBy(css="input#lastName")
-	public WebElement lastname;	
-
+	@FindBy(id="firstName")
+    public WebElement firstName;
+    
+    @FindBy(id="middleName")
+    public WebElement middleName;
+    
+    @FindBy(id="lastName")
+    public WebElement lastName;
+    
     @FindBy(id="employeeId")
     public WebElement employeeId;
     
@@ -26,19 +26,19 @@ public class AddEmployeePage extends BaseClass {
     @FindBy(xpath="//div[@id='location_inputfileddiv']//ul")
     public WebElement locationList;
     
-    @FindBy(css="a#systemUserSaveBtn")
+    @FindBy(xpath="//input[@id='chkLogin']")
+    public WebElement createLoginDetails;
+    
+    @FindBy(id="systemUserSaveBtn")
     public WebElement saveBtn;
     
     @FindBy(xpath="//button[@type='submit']")
-    public WebElement save;
+    public WebElement saveBtn2;
     
-	
-	public AddEmployeePage() {
-		PageFactory.initElements(driver, this);
-	}
-	
-	
-	
-	
-
+    @FindBy(xpath="//span[@id='pim.navbar.employeeName']")
+    public WebElement empCheck;
+    
+    public AddEmployeePage() {
+        PageFactory.initElements(driver,this);
+    }
 }
