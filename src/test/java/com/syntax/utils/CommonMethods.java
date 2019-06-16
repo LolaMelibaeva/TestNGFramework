@@ -13,12 +13,11 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.syntax.utils.BaseClass;
 
 public class CommonMethods extends  BaseClass {
 
@@ -276,15 +275,19 @@ public class CommonMethods extends  BaseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}
 	
-	public static void takeScreenshot(String folderName, String fileName) {
+	public static String takeScreenshot(String fileName) {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File scr = ts.getScreenshotAs(OutputType.FILE);
+		
+		String dest=System.getProperty("user.dir")+"/target/screenshots/"+fileName+".png";
+		
 		try {
-			FileUtils.copyFile(scr, new File("screenshots/"+folderName+"/"+fileName+".png"));
+			FileUtils.copyFile(scr, new File(dest));
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Screenshot is NOT taken");
 		}
+		return dest;
 	}
 	public static void scrollDown(int pixels) {
 		JavascriptExecutor js=(JavascriptExecutor)driver;

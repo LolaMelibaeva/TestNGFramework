@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.By;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -48,7 +48,7 @@ public class AddLocationPateTestWithExcel extends BaseClass {
 	
 				
 		Assert.assertTrue(CommonMethods.compareListValueReturnBoolean(addLoc.addedLocationList, country));
-
+		System.out.println("Added Locations are verified");
 	}
 
 	@DataProvider(name = "Country details")
@@ -59,7 +59,7 @@ public class AddLocationPateTestWithExcel extends BaseClass {
 		XSSFWorkbook workbook = null;
 
 		try {
-			fis = new FileInputStream(Constants.EXCEL_ADD_LOCATION_FILEPATH);
+			fis = new FileInputStream(Constants.XL_ADD_LOCATION_FILEPATH);
 			workbook = new XSSFWorkbook(fis);
 		} catch (IOException e) {
 			e.printStackTrace();

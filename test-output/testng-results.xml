@@ -1,183 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="20" total="22" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68546" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:32:48Z">
+  <suite name="Smoke Suite" duration-ms="18350" started-at="2019-06-16T17:29:21Z" finished-at="2019-06-16T17:29:39Z">
     <groups>
+      <group name="smoke">
+        <method signature="LoginPageTest.doLogin()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="doLogin" class="com.syntax.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginToOrangeHRM()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="loginToOrangeHRM" class="com.syntax.testcases.LoginPageTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="68546" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:32:48Z">
-      <class name="com.syntax.testcases.AddLocationPateTestWithExcel">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4545" started-at="2019-06-15T13:31:40Z" finished-at="2019-06-15T13:31:45Z">
+    <test name="Smoke Test" duration-ms="18350" started-at="2019-06-16T17:29:21Z" finished-at="2019-06-16T17:29:39Z">
+      <class name="com.syntax.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="setUp" is-config="true" duration-ms="6080" started-at="2019-06-16T17:29:21Z" finished-at="2019-06-16T17:29:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8283" started-at="2019-06-15T13:31:45Z" data-provider="Country details" finished-at="2019-06-15T13:31:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[APII]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Algeria]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Oran]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[78021.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="doLogin()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="doLogin" duration-ms="2852" started-at="2019-06-16T17:29:27Z" finished-at="2019-06-16T17:29:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.syntax.testcases.LoginPageTest.doLogin(LoginPageTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="665" started-at="2019-06-15T13:31:53Z" finished-at="2019-06-15T13:31:54Z">
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="tearDown" is-config="true" duration-ms="692" started-at="2019-06-16T17:29:31Z" finished-at="2019-06-16T17:29:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4006" started-at="2019-06-15T13:31:54Z" finished-at="2019-06-15T13:31:58Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="setUp" is-config="true" duration-ms="4231" started-at="2019-06-16T17:29:32Z" finished-at="2019-06-16T17:29:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8299" started-at="2019-06-15T13:31:58Z" data-provider="Country details" finished-at="2019-06-15T13:32:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[KLDOO]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Canada]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Toronto]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[14555.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loginToOrangeHRM()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="loginToOrangeHRM" duration-ms="2739" started-at="2019-06-16T17:29:36Z" finished-at="2019-06-16T17:29:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-06-15T13:32:06Z" finished-at="2019-06-15T13:32:07Z">
+        </test-method> <!-- loginToOrangeHRM -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.LoginPageTest@553f17c]" name="tearDown" is-config="true" duration-ms="673" started-at="2019-06-16T17:29:39Z" finished-at="2019-06-16T17:29:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4103" started-at="2019-06-15T13:32:07Z" finished-at="2019-06-15T13:32:11Z">
+      </class> <!-- com.syntax.testcases.LoginPageTest -->
+      <class name="com.syntax.testcases.AddEmployeePageTest">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest@31ef45e3]" name="generateReport" is-config="true" duration-ms="205" started-at="2019-06-16T17:29:21Z" finished-at="2019-06-16T17:29:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="9197" started-at="2019-06-15T13:32:11Z" data-provider="Country details" finished-at="2019-06-15T13:32:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FDSPP]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mexico]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Mexico City]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[17895.0]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:com.syntax.testcases.AddEmployeePageTest@31ef45e3]" name="flushReport" is-config="true" duration-ms="299" started-at="2019-06-16T17:29:39Z" finished-at="2019-06-16T17:29:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="661" started-at="2019-06-15T13:32:20Z" finished-at="2019-06-15T13:32:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4001" started-at="2019-06-15T13:32:21Z" finished-at="2019-06-15T13:32:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="9644" started-at="2019-06-15T13:32:25Z" data-provider="Country details" finished-at="2019-06-15T13:32:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[BDDNN]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Turkey]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Ankara]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[96324.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="658" started-at="2019-06-15T13:32:34Z" finished-at="2019-06-15T13:32:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="setUp" is-config="true" duration-ms="4036" started-at="2019-06-15T13:32:35Z" finished-at="2019-06-15T13:32:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="addEmployee" duration-ms="8660" started-at="2019-06-15T13:32:39Z" data-provider="Country details" finished-at="2019-06-15T13:32:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[WJDM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Georgi]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Tbilisi]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[45789.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.syntax.testcases.AddLocationPateTestWithExcel@3e6fa38a]" name="tearDown" is-config="true" duration-ms="660" started-at="2019-06-15T13:32:48Z" finished-at="2019-06-15T13:32:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.syntax.testcases.AddLocationPateTestWithExcel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- flushReport -->
+      </class> <!-- com.syntax.testcases.AddEmployeePageTest -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- Smoke Suite -->
 </testng-results>

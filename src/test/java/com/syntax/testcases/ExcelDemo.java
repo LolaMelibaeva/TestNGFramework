@@ -1,14 +1,13 @@
 package com.syntax.testcases;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
-import com.syntax.utils.BaseClass;
+
 
 public class ExcelDemo {
 

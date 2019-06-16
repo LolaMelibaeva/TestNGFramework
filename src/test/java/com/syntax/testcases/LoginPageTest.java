@@ -1,7 +1,6 @@
 package com.syntax.testcases;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Action;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,20 +13,35 @@ import com.syntax.utils.ConfigsReader;
 
 public class LoginPageTest extends BaseClass {
 
-	@Test(enabled=false)
+	@Test(groups="smoke")
 	public void loginToOrangeHRM() {
-
+	//	test=report.createTest("Positive login");
+		
 		LoginPageWithoutPageFactory login = new LoginPageWithoutPageFactory();
-
+		
+		test.info("Logging in with valid credentials");
+		
 		CommonMethods.sendText(login.username, "Admin");
 		CommonMethods.sendText(login.password, "xV9D@Q2Hbv");
 		CommonMethods.click(login.btnLogin);
+		
+		test.info("Logging in with valid credentials");
+		
+		HomePage home = new HomePage();
+		boolean isDisplayed = home.dashboardText.isDisplayed();
+
+		Assert.assertTrue(isDisplayed);
+		System.out.println(home.dashboardText +" is displayed");
+		
+
 
 	}
 
-	@Test(enabled=true)
+	@Test(groups="smoke")
 
 	public void doLogin() {
+		
+	//	test=report.createTest("Login verification 2");
 		LoginPage login = new LoginPage();
 
 		CommonMethods.sendText(login.username, ConfigsReader.getProperty("username"));
@@ -37,20 +51,24 @@ public class LoginPageTest extends BaseClass {
 		HomePage home = new HomePage();
 		boolean isDisplayed = home.dashboardText.isDisplayed();
 
-		Assert.assertTrue(isDisplayed);
+		Assert.assertTrue(false);
 		System.out.println(home.dashboardText +" is displayed");
 
+		//test.pass("Login verification passed");
 	}
 	
-	@Test(enabled=false)
+	@Test(groups="regression")
 	public void negativeLogin() {
 		
 
 		LoginPage login=new LoginPage();
-		
+		test.info("Logging in with Invalid credentials");
 		login.login("admin", "test");
-		String errorText=login.loginError.getText();
+		
+		
+		String errorText=login.loginError.getText();		
 		String expected="Invalid Credentials";
+		test.info("Verifying error message "+errorText);
 		Assert.assertEquals(errorText, expected);
 		
 	}
